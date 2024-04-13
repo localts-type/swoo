@@ -16,7 +16,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta htp-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="전성우우 님의 주민등록증 모바일 확인 서비스">
+    <meta property="og:title" content="전성우 님의 주민등록증 모바일 확인 서비스">
     <meta property="og:image" content="/static/icon/mobile_icon.ico">
     <meta property="og:description" content="주민등록증 모바일 확인 서비스">
     <meta property="og:site_name" content="주민등록증 모바일 확인 서비스">
@@ -88,7 +88,7 @@
             <h2 style="margin-left: 27px;">03.02.12</h2>
             <h3>인천광역시 서구</h3>
             <div class="QR_Code">
-                <img id="QR_img" src="https://chart.apis.google.com/chart?cht=qr&amp;chs=300x300&amp;chl=IDM3aSeEY5EhFP4sDbWiM%3D2BBi1XA8vXmAQBKHgHhFP4sDbWiM%3D">
+                <img id="QR_img" src="https://quickchart.io/qr?text= IDM3aSeEY5EhFP4sDbWiM%3D2BBi1XA8vXmAQBKHgHhFP4sDbWiM%3D&amp; size= 300x300"/>
             </div>
            
 		<progress value="0" max="30" id="jb"></progress>
@@ -148,7 +148,7 @@
   		for (let i = 0; i < 54; i++) {
       			result += characters.charAt(Math.floor(Math.random() * charactersLength));
   		}
-		document.querySelector('#QR_img').src = `https://chart.apis.google.com/chart?cht=qr&chs=300x300&chl=${result}`
+		document.querySelector('#QR_img').src = `https://quickchart.io/qr?text= ${result}&amp; size= 300x300"/`
                 count = 30
             }
             count -= 1
